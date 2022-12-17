@@ -1,0 +1,23 @@
+<%-include('partials/header');-%>
+<h1>Compose</h1>
+<!-- <form class="" action="/compose" method="post">
+  <input type="text" name="posttitle" value="">
+  <textarea name="name" rows="8" cols="80"></textarea>
+  <button type="sumbit" name="button">Post</button>
+
+</form> -->
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+<label for="">Title</label>
+    <input class="form-control" type="text"  name="posttitle" value="">
+
+<label for="">Post</label>
+  <textarea class="form-control" name="postbody" rows="8" cols="80"></textarea>
+
+
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <!-- button is outside the div container to create the space between button and the text area which was previously not there. -->
+</form>
+<%- include('partials/footer');-%>
